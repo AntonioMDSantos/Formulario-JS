@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="_css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<title>Formulario</title>
+  </head>
+  <body>
+      <div class="container">
+          <div class="hero">
+          <p><b>Formulario</b></p>
+        </div>
+        <form id="meuform">
+      <br>
+      <div class="name">
+        <span>Nome: </span>
+      <input id="name" required="required"  onkeyPress="return bloqueiaNumero(event);" type="text" maxlength="80">
+      </div>
+      <br>
+      <div class="apel">
+    <span>Apelido:</span>
+      <input id="nickname" required="required" onkeyPress="return bloqueiaNumero(event);" type="text" maxlength="20">
+      </div>
+      <br>
+      <div class="nasc">
+    <span>Data de nascimento:</span>
+      <input id="day" required="required"  type="date">
+      </div>
+      <br>
+      <div class="cpf">
+          <form>
+    <span>CPF:</span>
+      <input id="cpf" required="required" onkeyPress="return PermiteNumero();" type="text" maxlength="14">
+      </div>
+    </form>
+      <br>
+      <div class="heart">
+    <span>Time do coração:</span>
+      <select id="team_id" required="required"  maxlength="20">
+        <option id="1"></option>
+        <option id="1">Corinthians</option>
+        <option id="2">São Paulo</option>
+        <option id="100">Palmeiras</option>
+        <option id="100">Santos</option>
+        <option id="100">Internacional</option>
+        <option id="100">Flamengo</option>
+        <option id="100">Chapecoense</option>
+      </select>
+      </div>
+      <br>
+      <div class="sports">
+    <span>Esportes de interesse:</span><br>
+     <label ><input type="checkbox" name="sport" id="1"><b>Futebol</b></label><br>
+     <label><input type="checkbox" name="sport" id="2"><b>Vôlei</b></label><br>
+     <label ><input type="checkbox" name="sport" id="3"><b>Basquete</b></label><br>
+     <label ><input type="checkbox" name="sport" id="4"><b>Futsal</b></label><br>
+     <label><input type="checkbox" name="sport" id="5"><b>Automobilismo</b></label><br>
+     <label><input type="checkbox" name="sport" id="6"><b>Artes Marciais</b></label><br>
+     <label><input type="checkbox" name="sport" id="7"><b>Natação</b></label><br>
+      </div>
+     <br>
+     <div class="btnn">
+     <button class="Send" onclick="Enviar();">Enviar</button>
+     <button class="Resett" onclick="Resetar();">Reset</button>
+     </div>
+      </div>
+    </form>
+      <script type="text/javascript" src="_js/jd.js">
+      </script>
+  </body>
+</html>
